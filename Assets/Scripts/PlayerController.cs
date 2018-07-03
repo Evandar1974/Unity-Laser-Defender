@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour
     public float padding = 0.5f;
     public float rateOfFire = 0.2f;
     public GameObject projectile;
+    public ParticleSystem engine;
     private EnemyLaser incoming;
+
 	// Use this for initialization
 	void Start ()
     {

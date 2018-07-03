@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : MonoBehaviour
+{
+    public int pointsValue = 100;
     public GameObject projectile;
     public float shotsPerSecond = 0.5f;
     private float shotDelay;
     public int hitPoints = 2;
     private PlayerLaser incoming;
+    private ScoreKeeper scoreKeeper;
   	// Use this for initialization
 	void Start ()
     {
+        scoreKeeper = GameObject.Find("Score").GetComponent<ScoreKeeper>();
         		
 	}
 	
@@ -50,6 +54,7 @@ public class Enemy : MonoBehaviour {
 
     private void DestroyShip()
     {
+        scoreKeeper.Score(pointsValue);
         Destroy(this.gameObject);       
     }
 }

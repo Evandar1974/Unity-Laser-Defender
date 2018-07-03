@@ -7,6 +7,8 @@ public class EnemySpawner : MonoBehaviour {
     public float width = 10f;
     public float height = 5f;
     public float speed = 2f;
+    public float spawnDelay = 0.5f;
+
     private float xMin;
     private float xMax;
     public float padding;
@@ -33,7 +35,7 @@ public class EnemySpawner : MonoBehaviour {
     {
         if (AllMembersDead())
         {
-            SpawnEnemies();
+            SpawnUntilFull();
         }
         if (direction)
         {
@@ -83,6 +85,20 @@ public class EnemySpawner : MonoBehaviour {
         {
             GameObject enemy = Instantiate(enemyPrefab, child.transform.position, Quaternion.identity);
             enemy.transform.parent = child;
+        }
+    }
+
+    private void SpawnUntilFull()
+    {
+        Transform freePosition = NextFreePosition();
+        if (freePosition)
+        {
+            GameObject enemy = Instantiate(enemyPrefab, freePosition.position, Quaternion.identity);
+            enemy.transform.parent = freePosition;
+        }
+        if (NextFreePosition())
+        {
+            Invoke("SpawnUntilFull", spawnDelay);
         }
     }
 }
