@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8977822, g: 0.9632353, b: 0.48870027, a: 1}
+  m_Color: {r: 0.9528302, g: 0.08126605, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -242,9 +242,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 0.015138423, a: 1}
-    m_PressedColor: {r: 0.0074070143, g: 0.84184456, b: 1, a: 1}
+    m_NormalColor: {r: 0.9716981, g: 0.03208439, b: 0.03208439, a: 1}
+    m_HighlightedColor: {r: 0.22007369, g: 1, b: 0.015686274, a: 1}
+    m_PressedColor: {r: 1, g: 0.9526215, b: 0.007843137, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.06808472, g: 0.9622642, b: 0.08449196, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -637,6 +637,107 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &950008639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 950008640}
+  m_Layer: 0
+  m_Name: Starfields
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &950008640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 950008639}
+  m_LocalRotation: {x: 0.00023728402, y: 0.70710665, z: -0.7071068, w: -0.00023728402}
+  m_LocalPosition: {x: 0, y: 10, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1469999366}
+  - {fileID: 1305542266}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &998521372
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 950008640}
+    m_Modifications:
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -1.4551915e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499996825457294, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_Name
+      value: Starfield2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198932722095539096, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198932722095539096, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+        type: 2}
+      propertyPath: InitialModule.rotation3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198932722095539096, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 198932722095539096, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198932722095539096, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5137255
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1125534130
 Prefab:
   m_ObjectHideFlags: 0
@@ -683,6 +784,67 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2506923f25662c748a54a7e8897ad0b6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1160787393
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 950008640}
+    m_Modifications:
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -1.4551915e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499996825457294, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+      propertyPath: m_Name
+      value: Starfield1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198932722095539096, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18a0942d823a7c8469bc86c6d0bc8d61, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1305542266 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 998521372}
+--- !u!4 &1469999366 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4902636306103898, guid: 18a0942d823a7c8469bc86c6d0bc8d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 1160787393}
 --- !u!1 &1489358925
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,9 +900,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0.99264705, b: 0.17114608, a: 1}
-    m_PressedColor: {r: 0.9558824, g: 0.6838534, b: 0.09839964, a: 1}
+    m_NormalColor: {r: 0.21420348, g: 0.9622642, b: 0.040850822, a: 1}
+    m_HighlightedColor: {r: 0.99215686, g: 0.018663496, b: 0, a: 1}
+    m_PressedColor: {r: 0.94537574, g: 0.95686275, b: 0.09803921, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

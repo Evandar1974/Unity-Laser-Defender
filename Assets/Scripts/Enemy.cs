@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
     public float shotsPerSecond = 0.5f;
     private float shotDelay;
     public int hitPoints = 2;
+    public AudioClip fire;
+    public AudioClip explodes;
+
     private PlayerLaser incoming;
     private ScoreKeeper scoreKeeper;
   	// Use this for initialization
@@ -30,6 +33,7 @@ public class Enemy : MonoBehaviour
 
     private void Fire()
     {
+        AudioSource.PlayClipAtPoint(fire, transform.position);
         Instantiate(projectile, transform.position, Quaternion.identity);
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -54,6 +58,7 @@ public class Enemy : MonoBehaviour
 
     private void DestroyShip()
     {
+        AudioSource.PlayClipAtPoint(explodes, transform.position);
         scoreKeeper.Score(pointsValue);
         Destroy(this.gameObject);       
     }

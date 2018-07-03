@@ -133,9 +133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae7865ffd7bffd469fe8e01651a889e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsValue: 100
   projectile: {fileID: 1908484005289580, guid: 1d1572f319e25704b8ea8c66071b6aa2, type: 2}
   shotsPerSecond: 0.5
   hitPoints: 2
+  fire: {fileID: 8300000, guid: 5eb8762773d34b94782c3fb8b7b65ab7, type: 3}
+  explodes: {fileID: 8300000, guid: fc9493a78fa674247947fd54bca47f3e, type: 3}
 --- !u!212 &212306878935503164
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -168,8 +171,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1221532729
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52377dcf30aa7da43ba142d29c4794e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
