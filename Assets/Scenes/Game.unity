@@ -554,11 +554,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114403487538656474, guid: cf9fcf700a4954245b1513c704285745,
-        type: 2}
-      propertyPath: rateOfFire
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf9fcf700a4954245b1513c704285745, type: 2}
   m_IsPrefabParent: 0

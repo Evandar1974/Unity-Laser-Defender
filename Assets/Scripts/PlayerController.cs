@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour
 
     private void DestroyShip()
     {
-        Destroy(this.gameObject);      
+        Destroy(this.gameObject);
+        SceneManager.LoadScene("Lose");
     }
 }

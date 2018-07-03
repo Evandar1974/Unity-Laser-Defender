@@ -53,6 +53,18 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
+    private Transform NextFreePosition()
+    {
+        foreach(Transform childPositionGameObject in transform)
+        {
+            if (childPositionGameObject.childCount == 0)
+            {
+                return childPositionGameObject;
+            }
+        }
+        return null;
+    }
+
     private bool AllMembersDead()
     {
         foreach (Transform childPositionGameObject in transform)

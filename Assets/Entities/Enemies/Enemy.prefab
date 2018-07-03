@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114611659992158568}
   - component: {fileID: 60913207691720806}
   - component: {fileID: 50570348489935374}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1908484005289580, guid: 1d1572f319e25704b8ea8c66071b6aa2, type: 2}
+  shotsPerSecond: 0.5
   hitPoints: 2
 --- !u!212 &212306878935503164
 SpriteRenderer:
